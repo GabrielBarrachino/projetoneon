@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%;
+    @include responsivo(1300px){
+        font-size: 58%;
+    }
+    @include responsivo(991px){
+        font-size: 62.5%;
+    }
+}
+
+html, body{
+    // Serve para não dar aquela barra lateral no eixo X causada pela imagem, caso a imagem passe do tamanho da tela
+    overflow-x: hidden; 
+}
+
+button{
+    background-color: transparent;
+    cursor: pointer;
+}
